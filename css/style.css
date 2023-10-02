@@ -1,0 +1,201 @@
+body {
+    background: url("https://images.hdqwalls.com/download/grand-theft-auto-v-sunset-artwork-lu-1920x1080.jpg") no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+  height: 0px;
+  width: 0;
+}
+#container {
+    display: block;
+    background-color: #0e0e0eee;
+    box-shadow: 0 0 0.5vw black;
+    width: 55vw;
+    height: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1vw;
+    user-select: none;
+}
+#header-title {
+    width: max-content;
+    margin: 1vw auto 0 auto;
+    color: #fff;
+}
+#header-title i {
+    font-size: 1.5vw;
+}
+#header-title span {
+    font-size: 1.5vw;
+    font-weight: bolder;
+}
+#header-hr {
+    height: 0.1vw;
+    width: 100%;
+    background-color: #3131316c;
+    box-shadow: 0 0 0.1vw black;
+    margin: 1vw 0;
+}
+/* ASD */
+#results, #questions {
+    display: none;
+}
+#start-info {
+    color: #fff;
+    background-color: #00000067;
+    padding: 2vw;
+    border-bottom: 0.1vw solid #131313;
+}
+#start-info span {
+    font-size: 1.3vw;
+}
+#start-info p {
+    font-size: 0.7vw;
+}
+.start-block {
+    color: #fff;
+    background-color: #0000004d;
+    padding: 2vw;
+}
+.start-block span {
+    font-size: 1vw;
+    font-weight: bolder;
+}
+.start-block ul {
+    margin-top: 0.5vw;
+    font-size: 0.7vw;
+}
+#start-btn {
+    font-weight: bolder;
+    color: #fff;
+    background-color: #3aaf36;
+    width: max-content;
+    padding: 0.5vw 2vw;
+    margin: 1vw auto;
+    box-shadow: 0 0 5px #3aaf36;
+    font-size: 0.8vw;
+}
+#start-btn:hover {
+    box-shadow: 0 0 10px #3aaf36;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#questions-parent {
+    background-color: #0000004d;
+    padding: 2vw;
+    height: 19vw;
+}
+#q-bar {
+    width: 20vw;
+    margin: 1.1vw auto;
+    height: 0.7vw;
+    background-color: #0000004d;
+}
+#q-fill {
+    width: 0%;
+    height: 100%;
+    background-color: #5757574d;
+}
+#q-title {
+    color: #fff;
+    font-weight: bolder;
+    display: block;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 1vw;
+}
+#q-question {
+    color: #fff;
+    width: max-content;
+    margin: 0 auto;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+    font-weight: bold;
+}
+#q-answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4vw;
+    margin: 1vw auto 0 auto;
+    justify-content: center;
+}
+.q-answer {
+    position: relative;
+    background-color: #252525;
+    width: 10vw;
+    height: 10vw;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 0.3vw black;
+    overflow: hidden;
+}
+.q-answer span {
+    width: 9vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.7vw;
+    text-shadow: 0 0 0.2vw black;
+}
+.q-answer p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14vw;
+    z-index: 0;
+    color: #ffffff0a;
+}
+.q-answer:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 0.5vw black;
+    transition: all 0.3s;
+}
+#results-header {
+    background-color: #00000067;
+    text-align: center;
+    padding: 0.5vw 0;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+#results-percent {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#results-title {
+    font-size: 1vw;
+}
+#results-parent {
+    height: 20vw;
+    overflow: scroll;
+}
+.results-block {
+    background-color: #2a5c2800;
+    padding: 0.5vw;
+    color: #fff;
+}
+.results-qn, .results-you, .results-right  {
+    font-size: 0.7vw;
+    color: #ffffff52;
+}
+.results-q {
+    font-size: 0.9vw;
+}
+.results-block div span {
+    color: #fff !important;
+}
+.passed {
+    background-color: #2a5c2867 !important;
+}
+.notpassed {
+    background-color: #5c282867 !important;
+}
